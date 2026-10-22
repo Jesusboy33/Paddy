@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chinedu Paddy-Okoye | Software Engineer & Full-Stack Web Developer</title>
+<meta name="description" content="Portfolio of Chinedu Paddy-Okoye, a Software Engineering graduate in Abuja, Nigeria building web applications with Python, Django, PHP and SQL.">
+<meta property="og:title" content="Chinedu Paddy-Okoye | Full-Stack Web Developer">
+<meta property="og:description" content="Software Engineering graduate building practical web applications with Python, Django, PHP and SQL.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://i.postimg.cc/mDM9v4h9/Whats-App-Image-2026-10-21-at-3-35-52-PM.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233B82F6'/%3E%3Ctext x='32' y='43' font-family='sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3ECP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F14;--bg2:#111821;--card:#161F2B;--ac:#3B82F6;--ac2:#60A5FA;--tx:#F3F4F6;--tx2:#A7B0BE;--bd:#263244;--ok:#4ADE80;--err:#F87171;--r:16px;--sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--mono:'JetBrains Mono',ui-monospace,Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{font-family:var(--sans);background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--ac2)}
+:focus-visible{outline:3px solid var(--ac2);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ac);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+section:nth-of-type(even){background:var(--bg2)}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:12px}
+.lead{color:var(--tx2);max-width:62ch;margin-bottom:44px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(11,15,20,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:700;color:var(--tx);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{background:var(--ac);color:#fff;border-radius:9px;width:36px;height:36px;display:grid;place-items:center;font-size:.9rem}
+nav ul{display:flex;gap:4px;list-style:none}
+nav a{color:var(--tx2);text-decoration:none;padding:10px 12px;border-radius:8px;font-size:.93rem;font-weight:500;display:block;border-bottom:2px solid transparent}
+nav a:hover{color:var(--tx)}
+nav a.on{color:var(--ac2);border-bottom-color:var(--ac)}
+.menu{display:none;background:none;border:1px solid var(--bd);color:var(--tx);border-radius:10px;width:46px;height:46px;cursor:pointer;font-size:1.3rem}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:12px;font:600 .97rem var(--sans);text-decoration:none;cursor:pointer;border:1px solid transparent;transition:transform .2s,box-shadow .2s,background .2s;min-height:48px}
+.btn:hover{transform:translateY(-2px)}
+.pri{background:var(--ac);color:#fff}.pri:hover{background:#2563EB;box-shadow:0 6px 24px rgba(59,130,246,.35)}
+.sec{border-color:var(--bd);color:var(--tx);background:transparent}.sec:hover{border-color:var(--ac2);color:var(--ac2)}
+.btn[aria-disabled=true]{opacity:.55;cursor:not-allowed;pointer-events:none}
+/* hero */
+.hero{padding:72px 0 56px;position:relative}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#263244 1px,transparent 1px);background-size:26px 26px;opacity:.35;mask-image:linear-gradient(180deg,#000,transparent 80%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 80%);pointer-events:none}
+.hgrid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.tag{display:inline-block;border:1px solid var(--bd);background:var(--card);color:var(--ac2);font:500 .85rem var(--mono);padding:6px 14px;border-radius:99px;margin-bottom:20px}
+h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:800;margin-bottom:20px}
+h1 span{color:var(--ac2)}
+.hero p.sub{color:var(--tx2);font-size:1.1rem;max-width:56ch;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.photo{justify-self:center;position:relative;width:min(340px,80vw);aspect-ratio:1}
+.photo:before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px dashed var(--bd)}
+.ring{width:100%;height:100%;border-radius:50%;border:4px solid var(--ac);box-shadow:0 0 40px rgba(59,130,246,.28);overflow:hidden;background:var(--card);display:grid;place-items:center;font-size:4rem;font-weight:800;color:var(--ac2)}
+.ring img{width:100%;height:100%;object-fit:cover}
+.strip{position:relative;margin-top:56px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{font:500 .83rem var(--mono);color:var(--tx2);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:8px 14px}
+/* about */
+.two{display:grid;grid-template-columns:1.3fr 1fr;gap:48px}
+.two p{color:var(--tx2);margin-bottom:16px;max-width:66ch}
+.hl{display:grid;gap:12px;align-content:start}
+.hl div{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:16px 20px;font-weight:500}
+.hl div:before{content:"\25B8";color:var(--ac);margin-right:10px}
+.quote{border-left:3px solid var(--ac);padding:4px 0 4px 18px;color:var(--tx);margin-top:22px;max-width:62ch}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:26px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--ac);transform:translateY(-3px)}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{color:var(--tx2);font-size:.95rem}
+.card ul{list-style:none;margin-top:14px;display:grid;gap:8px}
+.card li{display:flex;justify-content:space-between;gap:10px;font-size:.93rem;border-top:1px solid var(--bd);padding-top:8px}
+.card li i{font:normal .78rem var(--mono);color:var(--ac2)}
+.ico{width:44px;height:44px;border-radius:12px;background:rgba(59,130,246,.12);color:var(--ac2);display:grid;place-items:center;margin-bottom:16px}
+.ico svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+/* projects */
+.feat{display:grid;grid-template-columns:1.1fr 1fr;gap:0;background:var(--card);border:1px solid var(--bd);border-radius:20px;overflow:hidden;margin-bottom:26px}
+.feat .body{padding:34px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px}
+.proj{background:var(--card);border:1px solid var(--bd);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
+.proj:hover,.feat:hover{border-color:var(--ac)}
+.proj:hover{transform:translateY(-3px)}
+.proj .body{padding:26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.cat{font:500 .8rem var(--mono);color:var(--ac2)}
+.proj h3,.feat h3{font-size:1.3rem}
+.proj p,.feat p{color:var(--tx2);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font:500 .76rem var(--mono);background:rgba(59,130,246,.1);color:var(--ac2);border-radius:8px;padding:4px 10px}
+.mine{font-size:.9rem;border-left:3px solid var(--ac);padding-left:12px;color:var(--tx)}
+.mine small{display:block;color:var(--tx2);font:500 .75rem var(--mono)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:8px}
+.links .btn{padding:10px 18px;min-height:44px;font-size:.9rem}
+.note{font-size:.8rem;color:var(--tx2)}
+.mock{background:#0B0F14;min-height:240px;padding:22px;display:flex;flex-direction:column;gap:12px;border-left:1px solid var(--bd)}
+.mock .top{display:flex;gap:6px}.mock .top i{width:9px;height:9px;border-radius:50%;background:var(--bd)}
+.row{display:flex;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px 14px;font-size:.82rem}
+.st{font:500 .72rem var(--mono);padding:3px 9px;border-radius:99px}
+.g{background:rgba(74,222,128,.14);color:var(--ok)}.r{background:rgba(248,113,113,.14);color:var(--err)}.b{background:rgba(59,130,246,.16);color:var(--ac2)}
+.qr{width:46px;height:46px;border-radius:6px;background:conic-gradient(#F3F4F6 25%,#0B0F14 0 50%,#F3F4F6 0 75%,#0B0F14 0);background-size:14px 14px;border:4px solid #F3F4F6}
+.thumb{height:150px;background:linear-gradient(135deg,#0f2a4d,#0B0F14);padding:20px;display:flex;flex-direction:column;justify-content:center;gap:10px;border-bottom:1px solid var(--bd)}
+.bars{display:flex;align-items:flex-end;gap:8px;height:60px}.bars i{flex:1;background:var(--ac);border-radius:4px 4px 0 0;opacity:.85}
+/* timeline */
+.tl{border-left:2px solid var(--bd);margin-left:8px;display:grid;gap:34px}
+.tl article{position:relative;padding-left:30px}
+.tl article:before{content:"";position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--ac);border:3px solid var(--bg)}
+.tl time{font:500 .85rem var(--mono);color:var(--ac2)}
+.tl h3{font-size:1.2rem;margin:4px 0 10px}
+.tl ul{color:var(--tx2);padding-left:20px;display:grid;gap:4px}
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:start}
+.cl{display:grid;gap:12px;list-style:none}
+.cl a,.cl div{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 18px;color:var(--tx);text-decoration:none;min-height:56px;transition:border-color .2s}
+.cl a:hover{border-color:var(--ac)}
+.cl small{display:block;color:var(--tx2);font-size:.78rem}
+form{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:28px;display:grid;gap:16px}
+label{font-weight:600;font-size:.9rem;display:grid;gap:6px}
+input,textarea{font:inherit;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;width:100%}
+input:focus,textarea:focus{outline:3px solid var(--ac2);outline-offset:1px;border-color:var(--ac)}
+textarea{min-height:140px;resize:vertical}
+.err{color:var(--err);font-size:.83rem;font-weight:400;min-height:1em}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:var(--err)}
+#status{padding:12px 16px;border-radius:10px;font-size:.93rem;display:none}
+#status.ok{display:block;background:rgba(74,222,128,.12);color:var(--ok);border:1px solid var(--ok)}
+#status.bad{display:block;background:rgba(248,113,113,.12);color:var(--err);border:1px solid var(--err)}
+footer{border-top:1px solid var(--bd);padding:30px 0;color:var(--tx2);font-size:.9rem}
+.up{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;border:1px solid var(--bd);background:var(--card);color:var(--tx);font-size:1.2rem;cursor:pointer;display:none;z-index:40}
+.up.show{display:block}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+ .menu{display:block}
+ nav{position:absolute;top:68px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--bd);display:none}
+ nav.open{display:block}
+ nav ul{flex-direction:column;padding:12px 24px}
+ .hgrid,.two,.feat,.cgrid{grid-template-columns:1fr}
+ .photo{order:-1;width:min(240px,70vw)}
+ .mock{border-left:0;border-top:1px solid var(--bd)}
+ section{padding:64px 0}
+ .cta .btn{flex:1 1 100%}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="#home"><b>CP</b>Chinedu Paddy-Okoye</a>
+  <button class="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+  <nav id="nav" aria-label="Main">
+   <ul>
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#services">Services</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+ <div class="wrap">
+  <div class="hgrid">
+   <div>
+    <span class="tag">Software Engineer | Full-Stack Web Developer</span>
+    <h1>Building Practical Software. Turning Ideas into <span>Applications.</span></h1>
+    <p class="sub">I'm Chinedu Paddy-Okoye, a Software Engineering graduate and full-stack web developer working with Python, Django, PHP, and SQL. I enjoy building useful applications and making technology easier to understand.</p>
+    <div class="cta">
+     <a class="btn pri" href="#projects">Explore my projects</a>
+     <a class="btn sec" href="#contact">Get in touch</a>
+     <a class="btn sec" href="https://github.com/Paddy-max7" target="_blank" rel="noopener">GitHub</a>
+    </div>
+   </div>
+   <div class="photo">
+    <div class="ring" id="ring">
+     <img src="https://i.postimg.cc/mDM9v4h9/Whats-App-Image-2026-10-21-at-3-35-52-PM.jpg" alt="Portrait of Chinedu Paddy-Okoye" width="340" height="340" referrerpolicy="no-referrer" onerror="this.remove();document.getElementById('ring').textContent='CP'">
+    </div>
+   </div>
+  </div>
+  <div class="strip" aria-label="Technologies">
+   <span class="chip">Python</span><span class="chip">Django</span><span class="chip">PHP</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Git</span><span class="chip">GitHub Actions</span>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <h2>About me</h2>
+  <div class="two rv">
+   <div>
+    <p>I'm Chinedu Paddy-Okoye, a Software Engineering graduate of Veritas University, Abuja, Nigeria. I build web applications with Python (Django), PHP, JavaScript, and SQL, and I enjoy turning ideas into working, user-friendly software.</p>
+    <p>Beyond development, I have experience teaching Python and Django to secondary school students, helping them understand web development and build their first applications. This experience strengthened my ability to communicate technical ideas clearly and collaborate effectively.</p>
+    <p>I'm also curious about healthcare technology and how software can support healthcare, though I approach it as a developer, not a medical expert.</p>
+    <p>I'm currently seeking an entry-level software developer opportunity where I can continue learning, grow as an engineer, and contribute to a development team.</p>
+    <p class="quote">I value maintainable code, practical solutions, teamwork, continuous learning, and software that is easy for people to use.</p>
+   </div>
+   <div class="hl">
+    <div>Full-stack web application development</div>
+    <div>Programming instruction for beginners</div>
+    <div>Collaborative academic projects</div>
+    <div>Automated deployment workflows</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="skills">
+ <div class="wrap">
+  <h2>Skills and technologies</h2>
+  <p class="lead">Levels are stated honestly. I'm early in my career and still learning.</p>
+  <div class="grid">
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><path d="M7 7h.01M7 17h.01"/></svg></div><h3>Backend development</h3><p>Application logic, data processing and server-side features.</p><ul><li>Python <i>Intermediate</i></li><li>Django <i>Intermediate</i></li><li>PHP <i>Intermediate</i></li></ul></div>
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div><h3>Frontend development</h3><p>Responsive, accessible interfaces that connect to backend services.</p><ul><li>HTML5 <i>Intermediate</i></li><li>CSS3 <i>Intermediate</i></li><li>JavaScript <i>Working knowledge</i></li></ul></div>
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>Database development</h3><p>Structuring data so web applications can store and query it reliably.</p><ul><li>SQL <i>Intermediate</i></li><li>Relational design and querying</li></ul></div>
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 8v8M18 11c0 4-6 2-12 5"/></svg></div><h3>Tools and deployment</h3><p>Version control and automated delivery of code to servers.</p><ul><li>Git</li><li>GitHub</li><li>GitHub Actions</li><li>FTP-based deployment</li></ul></div>
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M17 11a3 3 0 100-6M21 20c0-2.5-1.5-4.600-4-5.500"/></svg></div><h3>Professional skills</h3><p>Skills that help me work well in a team and explain my work.</p><ul><li>Technical communication</li><li>Teaching beginners</li><li>Team collaboration</li><li>Problem-solving</li><li>System design</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section id="projects">
+ <div class="wrap">
+  <h2>Featured projects</h2>
+  <p class="lead">Academic and coursework projects, with my own role stated for each.</p>
+
+  <article class="feat rv">
+   <div class="body" style="display:flex;flex-direction:column;gap:14px">
+    <span class="cat">Final-year project | Web application | Blockchain</span>
+    <h3>Check-It: Blockchain-Enabled Lost and Stolen Item Verification System</h3>
+    <p>Check-It helps people register electronic items, report lost or stolen belongings, and verify an item's reported status before buying it second-hand. It aims to improve ownership verification and reduce the resale of stolen goods by making important records harder to alter without detection.</p>
+    <div class="tags"><span>Python</span><span>Django</span><span>Solidity</span><span>Ethereum</span><span>HTML</span><span>CSS</span></div>
+    <p class="mine"><small>My contribution</small>Designed and developed the system as my BSc final-year project and prepared a 74-page project report documenting the work.</p>
+    <div class="links">
+     <a class="btn pri" href="https://deflected-strung-limeade.ngrok-free.dev/" target="_blank" rel="noopener">View project</a>
+    </div>
+    <span class="note">Academic prototype. The demo may be offline when my server is not running.</span>
+   </div>
+   <div class="mock" role="img" aria-label="Mockup of the Check-It dashboard showing item registration, ownership status and a QR certificate">
+    <div class="top"><i></i><i></i><i></i></div>
+    <div class="row"><span>Register new item</span><span class="st b">Add</span></div>
+    <div class="row"><span>iPhone 13 &middot; IMEI ...4821</span><span class="st g">Verified owner</span></div>
+    <div class="row"><span>Laptop &middot; SN ...9F02</span><span class="st r">Reported stolen</span></div>
+    <div class="row"><span>Ownership certificate</span><div class="qr"></div></div>
+   </div>
+  </article>
+
+  <div class="pgrid">
+   <article class="proj rv">
+    <div class="thumb" role="img" aria-label="Illustration of a risk assessment dashboard"><div class="row"><span>Patient risk level</span><span class="st r">Flagged</span></div><div class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:40%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:30%"></i></div></div>
+    <div class="body">
+     <span class="cat">Academic group project | AI and healthcare technology</span>
+     <h3>HEARTS-NG: Cardiovascular Risk Intelligence for Nigeria's Primary Healthcare Network</h3>
+     <p>An AI-based concept to support cardiovascular risk assessment and flag potential risks within Nigeria's primary healthcare network. Developed collaboratively and presented at a university exhibition. It is an academic concept and has not been clinically validated.</p>
+     <div class="tags"><span>Python</span><span>PyQt</span><span>AI / ML</span></div>
+     <p class="mine"><small>My contribution</small>Contributed to the concept note and system design, and prepared the pitch presentation.</p>
+     <div class="links"><span class="btn sec" aria-disabled="true">Links coming soon</span></div>
+    </div>
+   </article>
+   <!-- VUNA-Calc: remove this comment wrapper to show the project
+   <article class="proj rv">
+    <div class="thumb" role="img" aria-label="Deployment flow: code push, GitHub Actions, server"><div class="row"><span>Code push</span><span class="st b">GitHub Actions</span></div><div class="row"><span>Deploy over FTP</span><span class="st g">Server</span></div></div>
+    <div class="body">
+     <span class="cat">Web development | DevOps coursework</span>
+     <h3>VUNA-Calc: Web Calculator with Automated Deployment</h3>
+     <p>A web calculator for SEN 482 coursework, with extra features such as cube roots. A GitHub Actions workflow deploys updates to a server over FTP.</p>
+     <div class="tags"><span>HTML</span><span>JavaScript</span><span>GitHub Actions</span><span>FTP</span></div>
+     <p class="mine"><small>My contribution</small>Implemented the cube-root feature and configured the deployment pipeline under supervision of Mr. Iyke. Group assignment.</p>
+    </div>
+   </article>
+   -->
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <h2>Services</h2>
+  <p class="lead">Work I'm open to taking on with individuals, teams and small businesses.</p>
+  <div class="grid">
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/></svg></div><h3>Backend development</h3><p>Server-side features with Python, Django and PHP: application logic, data processing, and connecting interfaces to backend services.</p><p style="margin-top:14px"><a href="#contact">Discuss a backend task</a></p></div>
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/></svg></div><h3>Web application development</h3><p>Practical web apps with responsive interfaces, useful features and maintainable code.</p><p style="margin-top:14px"><a href="#contact">Start a web project</a></p></div>
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.700 3.600 3 8 3s8-1.300 8-3V6"/></svg></div><h3>Database design and SQL</h3><p>Structuring relational databases, designing tables and relationships, and writing SQL queries for application needs.</p><p style="margin-top:14px"><a href="#contact">Ask about databases</a></p></div>
+   <div class="card rv"><div class="ico"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c3 2.500 9 2.500 12 0v-5"/></svg></div><h3>Programming instruction</h3><p>Python and Django fundamentals for beginners, explained in plain language with hands-on exercises.</p><p style="margin-top:14px"><a href="#contact">Enquire about lessons</a></p></div>
+  </div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="wrap">
+  <h2>Experience and education</h2>
+  <div class="tl" style="margin-top:36px">
+   <article class="rv"><time>August 2026 &ndash; September 2026</time><h3>Python/Django Instructor, Iykon Digitals</h3>
+    <ul><li>Taught Python and Django to secondary school students.</li><li>Introduced students to web development concepts.</li><li>Guided learners through building their first applications.</li><li>Explained technical topics in simple, accessible terms.</li></ul></article>
+   <article class="rv"><time>Graduated 2026</time><h3>BSc Software Engineering, Veritas University, Abuja</h3>
+    <ul><li>Completed a degree in Software Engineering.</li><li>Gained practical programming and system-design experience through academic projects.</li><li>Worked on collaborative coursework in web development and automated deployment.</li><li>Built a final-year project on blockchain-enabled item ownership verification.</li></ul></article>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <h2>Have a project or opportunity in mind?</h2>
+  <p class="lead">I'm open to entry-level software development opportunities, collaborative projects, and suitable web development or programming instruction work. If you have an idea to build or an opportunity to discuss, let's connect.</p>
+  <div class="cgrid">
+   <ul class="cl">
+    <li><a href="mailto:paddychinedu2@gmail.com"><span><small>Email</small>paddychinedu2@gmail.com</span></a></li>
+    <li><a href="https://wa.me/2347013948223" target="_blank" rel="noopener"><span><small>WhatsApp</small>07013948223</span></a></li>
+    <li><a href="tel:+2348088574983"><span><small>Phone</small>08088574983</span></a></li>
+    <li><a href="https://github.com/Paddy-max7" target="_blank" rel="noopener"><span><small>GitHub</small>github.com/Paddy-max7</span></a></li>
+    <li><div><span><small>Location</small>Abuja, Nigeria</span></div></li>
+    <!-- Add LinkedIn and CV links here when available -->
+   </ul>
+   <form id="form" novalidate>
+    <label for="name">Name<input id="name" name="name" autocomplete="name" required><span class="err" id="e-name"></span></label>
+    <label for="email">Email address<input id="email" name="email" type="email" autocomplete="email" required><span class="err" id="e-email"></span></label>
+    <label for="subject">Subject<input id="subject" name="subject" required><span class="err" id="e-subject"></span></label>
+    <label for="message">Message<textarea id="message" name="message" required></textarea><span class="err" id="e-message"></span></label>
+    <button class="btn pri" type="submit" id="send">Send message</button>
+    <div id="status" role="status" aria-live="polite"></div>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="yr">2026</span> Chinedu Paddy-Okoye. Abuja, Nigeria.</div></footer>
+<button class="up" id="up" aria-label="Back to top">&uarr;</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+<script>
+(function(){
+ var EMAILJS={publicKey:"3QXq55UQpIvfALHJE",serviceId:"service_8k29a62",templateId:"template_lnlrx1s"};
+ document.getElementById("yr").textContent=new Date().getFullYear();
+ // mobile menu
+ var nav=document.getElementById("nav"),mb=document.querySelector(".menu");
+ mb.addEventListener("click",function(){var o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
+ nav.addEventListener("click",function(e){if(e.target.tagName==="A"){nav.classList.remove("open");mb.setAttribute("aria-expanded","false")}});
+ // active section + back to top
+ var links=[].slice.call(nav.querySelectorAll("a")),secs=links.map(function(a){return document.querySelector(a.getAttribute("href"))});
+ var up=document.getElementById("up");
+ function spy(){var y=window.scrollY+120,cur=0;secs.forEach(function(s,i){if(s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle("on",i===cur)});up.classList.toggle("show",window.scrollY>600)}
+ window.addEventListener("scroll",spy,{passive:true});spy();
+ up.addEventListener("click",function(){window.scrollTo({top:0})});
+ // reveal on scroll
+ var rv=document.querySelectorAll(".rv");
+ if("IntersectionObserver" in window&&!matchMedia("(prefers-reduced-motion:reduce)").matches){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+  rv.forEach(function(el){io.observe(el)});
+ }else{rv.forEach(function(el){el.classList.add("in")})}
+ // contact form
+ var f=document.getElementById("form"),st=document.getElementById("status"),btn=document.getElementById("send");
+ var msgs={name:"Enter your name.",email:"Enter a valid email address.",subject:"Enter a subject.",message:"Enter a message."};
+ function check(){var ok=true,first=null;["name","email","subject","message"].forEach(function(k){var el=f.elements[k],v=el.value.trim(),bad=!v||(k==="email"&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));el.setAttribute("aria-invalid",bad);document.getElementById("e-"+k).textContent=bad?msgs[k]:"";if(bad){ok=false;first=first||el}});if(first)first.focus();return ok}
+ f.addEventListener("submit",function(e){
+  e.preventDefault();st.className="";st.textContent="";
+  if(!check())return;
+  if(!window.emailjs){st.className="bad";st.textContent="The email service could not load. Please email me directly at paddychinedu2@gmail.com.";return}
+  btn.disabled=true;btn.textContent="Sending...";
+  var d={from_name:f.name.value.trim(),from_email:f.email.value.trim(),reply_to:f.email.value.trim(),name:f.name.value.trim(),email:f.email.value.trim(),subject:f.subject.value.trim(),title:f.subject.value.trim(),message:f.message.value.trim()};
+  emailjs.send(EMAILJS.serviceId,EMAILJS.templateId,d,{publicKey:EMAILJS.publicKey}).then(function(){
+   st.className="ok";st.textContent="Message sent. Thank you, I'll reply as soon as I can.";f.reset();
+  },function(){
+   st.className="bad";st.textContent="Your message was not sent. Please try again, or email me at paddychinedu2@gmail.com.";
+  }).then(function(){btn.disabled=false;btn.textContent="Send message"});
+ });
+})();
+</script>
+</body>
+</html>
